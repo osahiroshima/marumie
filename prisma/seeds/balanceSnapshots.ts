@@ -11,12 +11,12 @@ const data: BalanceSnapshotData[] = [
   {
     organizationSlug: 'sample-party',
     snapshotDate: new Date('2024-12-31'),
-    balance: 2000000, // 200万円
+    balance: 13200000, // 1,320万円（前期末残高）
   },
   {
     organizationSlug: 'sample-party',
     snapshotDate: new Date('2025-12-30'),
-    balance: 3000000, // 300万円
+    balance: 13712523, // 1,371万2,523円（当期末残高 = 合計資産額）
   },
 ];
 
