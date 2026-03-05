@@ -4,6 +4,7 @@ import CardHeader from "@/client/components/layout/CardHeader";
 import MainColumnCard from "@/client/components/layout/MainColumnCard";
 import type { PortfolioData } from "@/server/contexts/public-finance/domain/models/portfolio";
 import PortfolioPieChart from "./features/charts/PortfolioPieChart";
+import PortfolioSummaryTable from "./features/PortfolioSummaryTable";
 
 interface PortfolioSectionProps {
   data?: PortfolioData;
@@ -32,6 +33,7 @@ export default function PortfolioSection({
             <p className="text-sm text-gray-500 text-center">{data.snapshotDate} 時点</p>
           )}
           <PortfolioPieChart data={data} />
+          <PortfolioSummaryTable data={data} />
         </>
       ) : (
         <div className="flex justify-center items-center h-80 text-gray-500">
